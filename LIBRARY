@@ -207,7 +207,7 @@ function Library:CreateWindow(windowname,windowinfo)
 
     local PageYep = {}
 
-    function PageYep:addPage(pagename,scrollsize,visible,elementspacing)
+    function PageYep:Tab(pagename,scrollsize,visible,elementspacing)
         local Tab = Instance.new("TextButton")
         local TabCorner = Instance.new("UICorner")
         local Home = Instance.new("ScrollingFrame")
@@ -289,7 +289,7 @@ function Library:CreateWindow(windowname,windowinfo)
 
         local PageElements = {}
 
-        function PageElements:addLabel(labelname,labelinfo)
+        function PageElements:Label(labelname,labelinfo)
             local LabelHolder = Instance.new("Frame")
             local LabelHolderCorner = Instance.new("UICorner")
             local LabelTitle = Instance.new("TextLabel")
@@ -380,7 +380,7 @@ function Library:CreateWindow(windowname,windowinfo)
             
         end
 
-        function PageElements:addToggle(togglename,callback)
+        function PageElements:Toggle(togglename,callback)
             local ToggleHolder = Instance.new("Frame")
             local ToggleHolderCorner = Instance.new("UICorner")
             local ToggleTitle = Instance.new("TextLabel")
@@ -471,7 +471,7 @@ function Library:CreateWindow(windowname,windowinfo)
             end)
         end
 
-        function PageElements:addSlider(slidername,minvalue,maxvalue,callback)
+        function PageElements:Slider(slidername,minvalue,maxvalue,callback)
             local SliderHolder = Instance.new("Frame")
             local SliderTitle = Instance.new("TextLabel")
             local SliderHolderScript = Instance.new("UICorner")
@@ -577,7 +577,7 @@ function Library:CreateWindow(windowname,windowinfo)
             --
         end
 
-        function PageElements:addTextBox(textboxname,textboxdefault,callback)
+        function PageElements:TextBox(textboxname,textboxdefault,callback)
             local TextBoxHolder = Instance.new("Frame")
             local TextBoxTitle = Instance.new("TextLabel")
             local TextBox = Instance.new("TextBox")
@@ -636,7 +636,7 @@ function Library:CreateWindow(windowname,windowinfo)
             --
         end
 
-        function PageElements:addDropdown(dropdownname,list,scrollsize,callback)
+        function PageElements:Dropdown(dropdownname,list,scrollsize,callback)
             local DropdownHolder = Instance.new("Frame")
             local DropdownHolderCorner = Instance.new("UICorner")
             local DropdownTitle = Instance.new("TextLabel")
