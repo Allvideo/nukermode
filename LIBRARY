@@ -1,7 +1,7 @@
 -- don't judge :rage:
 local function DestroyYep()
     for x = 1,69 do 
-        if game.CoreGui:FindFirstChild("fu8rj82n") then game.CoreGui:FindFirstChild("fu8rj82n"):Destroy() end
+        if game.CoreGui:FindFirstChild("Nukermode") then game.CoreGui:FindFirstChild("Nukermode"):Destroy() end
     end
 end
 
@@ -28,7 +28,7 @@ function Library:CreateWindow(windowname,windowinfo)
     local YepTitle = Instance.new("TextLabel")
     local YepCorner = Instance.new("UICorner")
 
-    fu8rj82n.Name = "fu8rj82n"
+    fu8rj82n.Name = "Nukermode"
     fu8rj82n.Parent = game.CoreGui
     fu8rj82n.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
     fu8rj82n.ResetOnSpawn = false
