@@ -110,7 +110,7 @@ if game.CoreGui:FindFirstChild("Library") then
    end
   )
   
-  function Window(text, textgame, textcircle)
+  function VLib:Window(text, textgame, textcircle)
    local FirstTab = false
    local MainFrame = Instance.new("Frame")
    local MainCorner = Instance.new("UICorner")
