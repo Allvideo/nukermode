@@ -20,18 +20,18 @@ local function TPReturner(placeId)
     if foundAnything == "" then
         Site = S_H:JSONDecode(game:HttpGet('https://games.roblox.com/v1/games/' .. placeId .. '/servers/Public?sortOrder=Dec&limit=100'))
     else
-        Site = S_H:JSONDecode(game:HttpGet('https://games.roblox.com/v1/games/' .. placeId .. '/servers/Public?sortOrder=Dec&limit=100&cursor=' .. foundAnything))
+        Site = SH:JSONDecode(game:HttpGet('https://games.roblox.com/v1/games/' .. placeId .. '/servers/Public?sortOrder=Dec&limit=100&cursor=' .. foundAnything))
     end
     local ID = ""
     if Site.nextPageCursor and Site.nextPageCursor ~= "null" and Site.nextPageCursor ~= nil then
         foundAnything = Site.nextPageCursor
     end
     local num = 0;
-    for i,v in pairs(Site.data) do
+    for i,v in next,Site.data do
         local Possible = true
         ID = tostring(v.id)
         if tonumber(v.maxPlayers) > tonumber(v.playing) then
-            for _,Existing in pairs(AllIDs) do
+            for ,Existing in next,AllIDs do
                 if num ~= 0 then
                     if ID == tostring(Existing) then
                         Possible = false
