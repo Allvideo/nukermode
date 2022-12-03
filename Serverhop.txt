@@ -55,7 +55,7 @@ local function TPReturner(placeId)
                     wait()
                     S_T:TeleportToPlaceInstance(placeId, ID, game.Players.LocalPlayer)
                 end)
-                wait(4)
+                wait(2)
             end
         end
     end
