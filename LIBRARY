@@ -124,7 +124,7 @@ if game.CoreGui:FindFirstChild("Library") then
   
    MainFrame.Name = "MainFrame"
    MainFrame.Parent = Library
-   MainFrame.BackgroundColor3 = Color3.fromRGB(95, 3, 161)
+   MainFrame.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
    MainFrame.Position = UDim2.new(0.5, -325, 0.5, -250)
    MainFrame.Size = UDim2.new(0, 650, 0, 500)
   
