@@ -1812,6 +1812,17 @@ if game.CoreGui:FindFirstChild("Library") then
                if ep then
                   if #TextBox.Text > 0 then
                      pcall(callback, TextBox.Text)
+                     for i,v in pairs(game.Players:GetChildren()) do
+
+            if (string.sub(string.lower(v.DisplayName),1,string.len(TextBox.Text))) == string.lower(TextBox.Text) or (string.sub(string.lower(v.Name),1,string.len(TextBox.Text))) == string.lower(TextBox.Text) then
+
+                TextBox.Text = v.Name
+
+                
+
+            end
+
+        end
                      if disapper then
                         TextBox.Text = ""
                      end
