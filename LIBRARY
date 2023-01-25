@@ -738,7 +738,7 @@ if game.CoreGui:FindFirstChild("Library") then
   
          UserInputService.InputChanged:Connect(
             function(input)
-               if dragging and input.UserInputType == Enum.UserInputType.MouseMovement or Input.UserInputType == Enum.UserInputType.Touch  then
+               if (input.UserInputType == Enum.UserInputType.MouseMovement or Input.UserInputType == Enum.UserInputType.Touch) and dragging then
                   slide(input)
                end
             end
