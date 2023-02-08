@@ -681,7 +681,7 @@ if game.CoreGui:FindFirstChild("Library") then
          SliderIndicator.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
          SliderIndicator.BorderSizePixel = 0
          SliderIndicator.Position = UDim2.new(-0.00260408712, 0, 0.0363603085, 0)
-         SliderIndicator.Size = UDim2.new((start or 0) / max, 0, 0, 11)
+         SliderIndicator.Size = UDim2.new(start or 0 / max, 0, 0, 11)
   
          UIGradient_3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(160, 207, 236)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(102, 152, 255))}
          UIGradient_3.Parent = SliderIndicator
