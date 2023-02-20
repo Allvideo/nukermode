@@ -1822,7 +1822,8 @@ if game.CoreGui:FindFirstChild("Library") then
 
             end
 
-        end)
+        end
+        
                      
                      if disapper then
                         TextBox.Text = ""
