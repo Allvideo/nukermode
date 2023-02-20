@@ -1821,7 +1821,7 @@ if game.CoreGui:FindFirstChild("Library") then
                         TextBox.Text = ""
                      end
                   end
-               
+               end
             end)
          
   
