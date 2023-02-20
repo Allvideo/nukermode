@@ -1822,7 +1822,7 @@ if game.CoreGui:FindFirstChild("Library") then
 
             end
 
-        end
+       )
         
                      
                      if disapper then
